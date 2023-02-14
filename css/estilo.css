@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+#botonera {
+  background-color: rgb(210, 105, 30);
+}
+#botonera img {
+  width: 150px;
+}
+#botonera ul li a {
+  color: white;
+  font-size: 1.2em;
+}
+#botonera ul li a:hover {
+  color: rgb(210, 105, 30);
+}/*# sourceMappingURL=estilo.css.map */
