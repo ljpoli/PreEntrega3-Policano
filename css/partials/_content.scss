@@ -1,5 +1,5 @@
 #botonera{
-    background-color: $secondaryColor;
+    background-color: $maincolor;
     img{
         width: 150px;
         @media (min-width: 320px){
@@ -9,8 +9,9 @@
     ul{
         li{
             a{
-                color: white;
-                font-size: 1.2em;
+                color: $keyColor;
+                font-size: $textMd;
+                font-weight: $textRegular;
                 &:hover{
                 color: $secondaryColor;
                 }
@@ -18,4 +19,72 @@
         }
     }
 }
-.titulo
+.titulo{
+    color: $secondaryColor;
+    background-color:$keyColor;
+    font-size: $textXxl;
+    font-weight: $textBold;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    margin-top: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+        a:hover{
+            text-decoration: underline;
+        
+        }   
+
+}
+
+.main{
+    background-color:$maincolor;
+}
+
+
+main article a{
+    text-decoration: none;
+    color:$keyColor; 
+    &:hover{
+        color: $secondaryColor;
+    }
+}
+
+main article img{
+    width: 300px;
+    height: 300px;
+    margin: 1em auto;
+    object-fit: fill;
+    padding-bottom: 3em;
+    filter:none;
+    :hover{
+    filter:sepia(100%);
+    transition:filter 2s;
+    }
+}
+.article a:hover{
+    text-decoration: underline;
+       
+}
+
+h1{
+    font-size: $textXl;
+    color: $secondaryColor;padding-top: 0.4em;
+    font-weight: $textBold;
+    padding-bottom: 0.4em;
+    margin-top: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h4,h6{
+    color: $keyColor;
+    font-size: $textMd;
+    text-align: center;
+}
+
+h4{
+    font-weight:$textRegular;
+    :hover{
+        text-decoration: underline;
+    }
+}

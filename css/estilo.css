@@ -1,14 +1,134 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+.r-A {
+  width: 100px;
+  height: 90px;
+  margin: 2em;
+  -o-object-fit: fill;
+     object-fit: fill;
+  padding-left: 2em;
+}
+
+.r-B {
+  width: 100px;
+  height: 90px;
+  margin: 2em;
+  -o-object-fit: fill;
+     object-fit: fill;
+  padding-left: 2em;
+}
+
+.r-C {
+  width: 100px;
+  height: 90px;
+  margin: 2em;
+  -o-object-fit: fill;
+     object-fit: fill;
+  padding-left: 2em;
+}
+
+.r-D {
+  width: 100px;
+  height: 90px;
+  margin: 2em;
+  -o-object-fit: fill;
+     object-fit: fill;
+  padding-left: 2em;
+}
+
+p {
+  display: grid;
+  font-size: 0.6em;
+  font-weight: 900;
+  width: 100%;
+  margin: 3em;
+  text-align: center;
+}
+
 #botonera {
-  background-color: rgb(210, 105, 30);
+  background-color: rgba(13, 61, 61, 0.5);
 }
 #botonera img {
   width: 150px;
 }
+@media (min-width: 320px) {
+  #botonera img {
+    width: 100px;
+  }
+}
 #botonera ul li a {
   color: white;
   font-size: 1.2em;
+  font-weight: 500;
 }
 #botonera ul li a:hover {
   color: rgb(210, 105, 30);
+}
+
+.titulo {
+  color: rgb(210, 105, 30);
+  background-color: white;
+  font-size: 2.5em;
+  font-weight: 900;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  margin-top: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.titulo a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  background-color: rgba(13, 61, 61, 0.5);
+}
+
+main article a {
+  text-decoration: none;
+  color: white;
+}
+main article a:hover {
+  color: rgb(210, 105, 30);
+}
+
+main article img {
+  width: 300px;
+  height: 300px;
+  margin: 1em auto;
+  -o-object-fit: fill;
+     object-fit: fill;
+  padding-bottom: 3em;
+  filter: none;
+}
+main article img :hover {
+  filter: sepia(100%);
+  transition: filter 2s;
+}
+
+.article a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.8em;
+  color: rgb(210, 105, 30);
+  padding-top: 0.4em;
+  font-weight: 900;
+  padding-bottom: 0.4em;
+  margin-top: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h4, h6 {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+h4 {
+  font-weight: 500;
+}
+h4 :hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=estilo.css.map */
