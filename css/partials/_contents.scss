@@ -9,9 +9,11 @@
     ul{
         li{
             a{
+                background-color: $maincolor;
                 color: $keyColor;
                 font-size: $textMd;
-                font-weight: $textRegular;
+                font-weight: $textLight;
+                font-family: $fontroboto;
                 &:hover{
                 color: $secondaryColor;
                 }
@@ -24,6 +26,7 @@
     background-color:$keyColor;
     font-size: $textXxl;
     font-weight: $textBold;
+    font-family: $fontroboto;
     padding-top: 0.4em;
     padding-bottom: 0.4em;
     margin-top: 0.5em;
@@ -36,10 +39,6 @@
 
 }
 
-.main{
-    background-color:$maincolor;
-}
-
 
 main article a{
     text-decoration: none;
@@ -50,13 +49,13 @@ main article a{
 }
 
 main article img{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     margin: 1em auto;
     object-fit: fill;
     padding-bottom: 3em;
     filter:none;
-    :hover{
+    &:hover{
     filter:sepia(100%);
     transition:filter 2s;
     }
@@ -73,18 +72,86 @@ h1{
     padding-bottom: 0.4em;
     margin-top: 0.5em;
     text-align: center;
-    text-transform: uppercase;
+   
 }
 
 h4,h6{
-    color: $keyColor;
-    font-size: $textMd;
+    color: $secondaryColor;
+    font-size: $textXl;
     text-align: center;
 }
 
 h4{
     font-weight:$textRegular;
-    :hover{
+    margin-bottom: 2em;
+    &:hover{
         text-decoration: underline;
     }
 }
+      
+#redes{
+    background-color: $maincolor;
+}
+
+#redes .footer__img{    
+    margin: 2em;
+    width: 90px;
+    height: 90px;     
+    border-radius:50%;    
+}
+
+.r-A{
+    grid-area: r-A;
+}
+
+.r-B{
+    grid-area: r-B;
+}
+
+.r-C{
+    grid-area: r-C;
+}
+
+.r-D{
+    grid-area: r-D;
+    
+}
+
+.p-E{
+    grid-area: p-E;
+  
+}
+
+#redes{
+    display: grid;   
+    grid-template-columns: 1fr 1fr;
+    grid-row: repeat (3, 20vh);
+    grid-template-areas: 
+    "r-A r-B"
+    "r-C r-D"
+    "p-E p-E";
+}
+
+@media (max-width: 768px){
+    #redes{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (5,20vh);
+        grid-template-areas: 
+        "r-A"
+        "r-B"
+        "r-C"
+        "r-D"
+        "p-E";
+    }   
+  
+ }
+
+ p{
+    color: $keyColor;
+    display: grid;
+    font-size:$textSm;
+    font-weight: $textLight;
+    width: 100%;
+    margin: 3em;
+    text-align:center;
+    }

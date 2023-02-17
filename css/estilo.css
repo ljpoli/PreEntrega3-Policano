@@ -1,49 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
-.r-A {
-  width: 100px;
-  height: 90px;
-  margin: 2em;
-  -o-object-fit: fill;
-     object-fit: fill;
-  padding-left: 2em;
-}
-
-.r-B {
-  width: 100px;
-  height: 90px;
-  margin: 2em;
-  -o-object-fit: fill;
-     object-fit: fill;
-  padding-left: 2em;
-}
-
-.r-C {
-  width: 100px;
-  height: 90px;
-  margin: 2em;
-  -o-object-fit: fill;
-     object-fit: fill;
-  padding-left: 2em;
-}
-
-.r-D {
-  width: 100px;
-  height: 90px;
-  margin: 2em;
-  -o-object-fit: fill;
-     object-fit: fill;
-  padding-left: 2em;
-}
-
-p {
-  display: grid;
-  font-size: 0.6em;
-  font-weight: 900;
-  width: 100%;
-  margin: 3em;
-  text-align: center;
-}
-
 #botonera {
   background-color: rgba(13, 61, 61, 0.5);
 }
@@ -56,9 +11,11 @@ p {
   }
 }
 #botonera ul li a {
+  background-color: rgba(13, 61, 61, 0.5);
   color: white;
   font-size: 1.2em;
-  font-weight: 500;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
 }
 #botonera ul li a:hover {
   color: rgb(210, 105, 30);
@@ -69,6 +26,7 @@ p {
   background-color: white;
   font-size: 2.5em;
   font-weight: 900;
+  font-family: "Roboto", sans-serif;
   padding-top: 0.4em;
   padding-bottom: 0.4em;
   margin-top: 0.5em;
@@ -77,10 +35,6 @@ p {
 }
 .titulo a:hover {
   text-decoration: underline;
-}
-
-.main {
-  background-color: rgba(13, 61, 61, 0.5);
 }
 
 main article a {
@@ -92,15 +46,15 @@ main article a:hover {
 }
 
 main article img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: auto;
   margin: 1em auto;
   -o-object-fit: fill;
      object-fit: fill;
   padding-bottom: 3em;
   filter: none;
 }
-main article img :hover {
+main article img:hover {
   filter: sepia(100%);
   transition: filter 2s;
 }
@@ -117,18 +71,73 @@ h1 {
   padding-bottom: 0.4em;
   margin-top: 0.5em;
   text-align: center;
-  text-transform: uppercase;
 }
 
 h4, h6 {
-  color: white;
-  font-size: 1.2em;
+  color: rgb(210, 105, 30);
+  font-size: 1.8em;
   text-align: center;
 }
 
 h4 {
   font-weight: 500;
+  margin-bottom: 2em;
 }
-h4 :hover {
+h4:hover {
   text-decoration: underline;
+}
+
+#redes {
+  background-color: rgba(13, 61, 61, 0.5);
+}
+
+#redes .footer__img {
+  margin: 2em;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.r-A {
+  grid-area: r-A;
+}
+
+.r-B {
+  grid-area: r-B;
+}
+
+.r-C {
+  grid-area: r-C;
+}
+
+.r-D {
+  grid-area: r-D;
+}
+
+.p-E {
+  grid-area: p-E;
+}
+
+#redes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: repeat 3, 20vh;
+  grid-template-areas: "r-A r-B" "r-C r-D" "p-E p-E";
+}
+
+@media (max-width: 768px) {
+  #redes {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 5, 20vh;
+    grid-template-areas: "r-A" "r-B" "r-C" "r-D" "p-E";
+  }
+}
+p {
+  color: white;
+  display: grid;
+  font-size: 0.6em;
+  font-weight: 300;
+  width: 100%;
+  margin: 3em;
+  text-align: center;
 }/*# sourceMappingURL=estilo.css.map */
