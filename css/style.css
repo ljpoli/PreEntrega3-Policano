@@ -129,6 +129,9 @@ main article img:hover{
     text-align:center;
     }
 
+.formulario{
+    background-image:url(../imagenes/colagepetit.webp);
+}
 .formulario p{
     width: 100%;
     margin: 1em;
