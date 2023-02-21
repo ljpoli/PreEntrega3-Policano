@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #botonera {
   background-color: rgba(13, 61, 61, 0.5);
+  background-color: rgba(13, 61, 61, 0.5);
+  box-sizing: border-box;
 }
 #botonera img {
   width: 150px;
@@ -30,10 +38,6 @@
   padding-bottom: 0.4em;
   margin-top: 0.5em;
   text-align: center;
-  text-transform: uppercase;
-}
-.titulo a:hover {
-  text-decoration: underline;
 }
 
 h1 {
@@ -44,6 +48,13 @@ h1 {
   padding-bottom: 0.4em;
   margin-top: 0.5em;
   text-align: center;
+  text-transform: capitalize;
+}
+
+main {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 main article a {
@@ -80,9 +91,6 @@ h4, h6 {
 h4 {
   font-weight: 500;
 }
-h4:hover {
-  text-decoration: underline;
-}
 
 #redes {
   background-color: rgba(13, 61, 61, 0.5);
@@ -96,11 +104,6 @@ h4:hover {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-}
-
-.card {
-  width: 200%;
-  height: 100px;
 }
 
 .r-A {
@@ -139,7 +142,6 @@ h4:hover {
 }
 p {
   color: white;
-  display: grid;
   font-size: 0.6em;
   font-weight: 300;
   width: 100%;
@@ -147,16 +149,15 @@ p {
   text-align: center;
 }
 
-.formulario {
-  background-repeat: no-repeat;
+.imagenformulario {
+  background-image: url(https://i.pinimg.com/originals/52/b8/ca/52b8caa82c0fcda0ec8d2c288d6ff08d.jpg);
   background-position: center;
   background-size: cover;
-  display: flex;
+  background-repeat: no-repeat;
 }
 
 .formulario p {
-  width: 100%;
-  margin: 1em;
+  margin: auto;
   padding: 1.5em;
   color: rgb(210, 105, 30);
   font-size: 1.2em;
