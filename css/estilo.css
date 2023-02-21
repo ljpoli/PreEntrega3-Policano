@@ -5,26 +5,28 @@
   box-sizing: border-box;
 }
 
-#botonera {
+#botonera#botonera {
   background-color: rgba(13, 61, 61, 0.5);
-  background-color: rgba(13, 61, 61, 0.5);
-  box-sizing: border-box;
 }
-#botonera img {
-  width: 150px;
+#botonera#botonera img {
+  width: 70px;
 }
-@media (min-width: 320px) {
-  #botonera img {
-    width: 100px;
+@media (max-width: 320px) {
+  #botonera#botonera img {
+    width: 50px;
   }
 }
-#botonera ul li a {
+#botonera#botonera ul {
+  width: 100%;
+  align-items: end;
+}
+#botonera#botonera ul li a {
   color: white;
   font-size: 1.2em;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
 }
-#botonera ul li a:hover {
+#botonera#botonera ul li a:hover {
   color: rgb(210, 105, 30);
 }
 
@@ -36,7 +38,7 @@
   font-family: "Roboto", sans-serif;
   padding-top: 0.4em;
   padding-bottom: 0.4em;
-  margin-top: 0.5em;
+  margin: 1em;
   text-align: center;
 }
 
@@ -50,14 +52,14 @@ h1 {
   text-align: center;
   text-transform: capitalize;
 }
-
-main {
-  margin: auto;
-  padding: 0;
-  box-sizing: border-box;
+h1:hover {
+  text-decoration: underline;
 }
 
 main article a {
+  width: 100%;
+  margin-bottom: 2.5em;
+  justify-content: center;
   text-decoration: none;
   color: rgba(13, 61, 61, 0.5);
 }
@@ -70,40 +72,35 @@ main article img {
   height: 40vh;
   -o-object-fit: fill;
      object-fit: fill;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
   filter: none;
 }
 main article img:hover {
   filter: sepia(100%);
   transition: filter 2s;
 }
-
-.article a:hover {
+main article img.article a:hover {
   text-decoration: underline;
 }
 
 h4, h6 {
+  width: 100%;
   color: rgb(210, 105, 30);
   font-size: 1.8em;
   text-align: center;
-}
-
-h4 {
   font-weight: 500;
 }
 
 #redes {
+  width: 100%;
   background-color: rgba(13, 61, 61, 0.5);
-  margin-top: 3em;
 }
 
 #redes .footer__img {
-  -webkit-margin-start: 3em;
-          margin-inline-start: 3em;
-  padding: 0.5em;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
+  margin: 0.5em;
 }
 
 .r-A {
@@ -145,7 +142,7 @@ p {
   font-size: 0.6em;
   font-weight: 300;
   width: 100%;
-  margin: 3em;
+  margin: 0.5em;
   text-align: center;
 }
 
@@ -157,9 +154,16 @@ p {
 }
 
 .formulario p {
+  width: 100%;
+  height: auto;
   margin: auto;
+  display: flex;
   padding: 1.5em;
+  justify-content: center;
   color: rgb(210, 105, 30);
   font-size: 1.2em;
   font-weight: 500;
+}
+.formulario p .btn {
+  margin: 0.5em;
 }/*# sourceMappingURL=estilo.css.map */
