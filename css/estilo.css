@@ -159,10 +159,9 @@ main article aa:hover {
 }
 
 main article img {
-  width: 100%;
-  height: 40vh;
-  -o-object-fit: fill;
-     object-fit: fill;
+ 
+  object-fit: cover;
+  object-fit: fill;
   padding-bottom: 1em;
   filter: none;
 }
